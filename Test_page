@@ -1,0 +1,87 @@
+
+<html>
+<head>
+	<title> Vocabulary Quiz </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://cdn.rawgit.com/antijingoist/open-dyslexic/v3.00/fonts/opendyslexic-regular/opendyslexic.css" rel="stylesheet">
+	<style>
+		body {
+			font-size: 25px;
+			font-family: "Open Dyslexic", Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f7f7f7;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin-top: 20px;
+			margin-bottom: 50px;
+		}
+		.quiz-item {
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+		.quiz-item label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		.quiz-item input[type="text"] {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+		.quiz-item audio {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: block;
+		}
+		.quiz-item button {
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.quiz-item button:hover {
+			background-color: #222;
+		}
+	</style>
+</head>
+<body>
+	<h1>Vocabulary Quiz</h1>
+	<div class="container">
+		<form>
+			<div class="quiz-item">
+				<label for="word1">Word 1:</label>
+				<input type="text" id="word1" name="word1">
+				<audio src="" id="audio1" controls></audio>
+			</div>
+			<div class="quiz-item">
+				<label for="word2">Word 2:</label>
+				<input type="text" id="word2" name="word2">
+				<audio src=""
